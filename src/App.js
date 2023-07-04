@@ -53,6 +53,9 @@ function App() {
       setTaskQueue(updatedTaskQueue);
       setTask("");
       currentTaskIndex = currentTaskIndex + 1
+      if(currentTaskIndex >= teams[selectedTeam].length){
+        currentTaskIndex == 0
+      }
     }
   };
   
